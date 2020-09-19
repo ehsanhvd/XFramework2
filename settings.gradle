@@ -1,0 +1,2 @@
+include ':app', ':xcore', ':xutils', ':xpersiandatepicker'
+rootProject.name='XFramework'
