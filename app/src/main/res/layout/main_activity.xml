@@ -4,9 +4,15 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/btnDatePicker"
-        android:text="datepicker"
+        android:id="@+id/btnDateTimePicker"
+        android:text="date time picker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="datepicker" />
 
 </LinearLayout>

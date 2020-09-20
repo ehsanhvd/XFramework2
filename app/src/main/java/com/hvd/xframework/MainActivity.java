@@ -6,19 +6,13 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DatePickerListener;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DateTimePickerListener;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.XDatePicker;
-import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.XDateTimePicker;
-import com.mohamadamin.persianmaterialdatetimepicker.time.TimePickerDialog;
-import com.mohamadamin.persianmaterialdatetimepicker.utils.PersianCalendar;
 
 import org.jetbrains.annotations.NotNull;
-
-import kotlin.Unit;
-import kotlin.jvm.functions.Function4;
-import kotlin.jvm.functions.Function6;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -26,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
-        findViewById(R.id.btnDatePicker).setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btnDateTimePicker).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
@@ -34,6 +28,19 @@ public class MainActivity extends AppCompatActivity {
                 xDateTimePicker.showDateTimePicker(new DateTimePickerListener() {
                     @Override
                     public void onDateTimePicked(@NotNull XDateTimePicker xDateTimePicker, int year, int month, int day, int hour, int min) {
+
+                    }
+                });
+            }
+        });
+        findViewById(R.id.btnDatePicker).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                XDatePicker xDatePicker = new XDatePicker(MainActivity.this);
+                xDatePicker.showDatePicker(new DatePickerListener() {
+                    @Override
+                    public void onDatePicked(@NotNull DatePickerDialog datePickerDialog, int year, int month, int day) {
 
                     }
                 });
