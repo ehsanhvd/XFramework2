@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/xcore" />
             <option value="$PROJECT_DIR$/xpersiandatepicker" />
             <option value="$PROJECT_DIR$/xutils" />
+            <option value="$PROJECT_DIR$/xview" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
