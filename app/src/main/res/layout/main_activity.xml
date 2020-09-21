@@ -25,7 +25,7 @@
         <com.hvd.xcustomview.view.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="customText" />
+            android:text="ImagePicker: " />
 
         <com.hvd.xcustomview.view.GlideImageViewCircle
             android:id="@+id/circleImageView"

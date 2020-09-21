@@ -1,2 +1,2 @@
-include ':app', ':xcore', ':xutils', ':xpersiandatepicker', ':xview'
+include ':app', ':xcore', ':xutils', ':xpersiandatepicker', ':xview', ':cropper'
 rootProject.name='XFramework'

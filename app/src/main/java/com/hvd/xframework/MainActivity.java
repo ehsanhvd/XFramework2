@@ -1,5 +1,6 @@
 package com.hvd.xframework;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -7,6 +8,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hvd.xcustomview.view.GlideImageView;
+import com.hvd.xview.utils.XImagePicker;
 import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DatePickerListener;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DateTimePickerListener;
@@ -49,5 +51,16 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ((GlideImageView)findViewById(R.id.circleImageView)).setImageResource(R.mipmap.ic_launcher);
+        ((GlideImageView)findViewById(R.id.circleImageView)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                new XImagePicker(MainActivity.this).startWithActivity(new XImagePicker.ImagePickerListener() {
+                    @Override
+                    public void onImagePicked(@NotNull Uri uri) {
+
+                    }
+                });
+            }
+        });
     }
 }

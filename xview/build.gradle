@@ -28,6 +28,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':xpersiandatepicker')
+    implementation project(path: ':cropper')
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
@@ -47,6 +48,4 @@ dependencies {
     implementation 'com.github.bumptech.glide:annotations:4.6.1'
     implementation 'jp.wasabeef:glide-transformations:3.0.1'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
-
-    api 'com.theartofdev.edmodo:android-image-cropper:2.8.+'
 }
