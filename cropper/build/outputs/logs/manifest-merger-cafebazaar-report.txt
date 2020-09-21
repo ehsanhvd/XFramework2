@@ -1,0 +1,37 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:2:5-45
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+	android:versionCode
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml:1:1-4:12
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		ADDED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
+		INJECTED from /mnt/SSD130/p/sappandroid/cropper/src/main/AndroidManifest.xml
