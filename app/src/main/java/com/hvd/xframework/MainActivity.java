@@ -1,5 +1,6 @@
 package com.hvd.xframework;
 
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -21,6 +22,9 @@ import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.XDateTimePic
 import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
+
+    private XImagePicker picker;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,14 +41,21 @@ public class MainActivity extends AppCompatActivity {
         ((GlideImageView) findViewById(R.id.circleImageView)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new XImagePicker(MainActivity.this).startWithActivity(new XImagePicker.ImagePickerListener() {
+                picker = new XImagePicker(MainActivity.this);
+                picker.startWithActivity(new XImagePicker.ImagePickerListener() {
                     @Override
                     public void onImagePicked(@NotNull Uri uri) {
-
+                        ((GlideImageView) findViewById(R.id.circleImageView)).setImageURI(uri);
                     }
                 });
             }
         });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        picker.onActivityResult(requestCode, resultCode, data);
     }
 
     private void showMenu() {

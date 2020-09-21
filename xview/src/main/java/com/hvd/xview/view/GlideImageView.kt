@@ -74,6 +74,7 @@ open class GlideImageView(context: Context, val attrs: AttributeSet?, val defSty
         setImageDrawableGlide(context.resources.getDrawable(resId))
     }
 
+
     fun setImageDrawableGlide(drawable: Drawable?) {
         val request = Glide.with(getContext())
             .load(drawable)
