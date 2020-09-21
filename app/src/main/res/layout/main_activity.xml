@@ -16,12 +16,6 @@
             android:layout_height="wrap_content"
             android:text="date time picker" />
 
-        <com.hvd.xcustomview.view.CustomButton
-            android:id="@+id/btnDatePicker"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="datepicker" />
-
         <com.hvd.xcustomview.view.CustomTextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

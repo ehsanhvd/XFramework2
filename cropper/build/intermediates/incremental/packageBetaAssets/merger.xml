@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\p\sappandroid\cropper\src\main\assets"/><source path="D:\p\sappandroid\cropper\build\intermediates\shader_assets\beta\compileBetaShaders\out"/></dataSet><dataSet config="beta" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="D:\p\sappandroid\cropper\src\beta\assets"/></dataSet></merger>

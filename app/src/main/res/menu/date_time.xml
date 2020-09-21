@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuTime"
+        android:title="Date and Time" />
+    <item
+        android:id="@+id/menuDate"
+        android:title="Date " />
+</menu>

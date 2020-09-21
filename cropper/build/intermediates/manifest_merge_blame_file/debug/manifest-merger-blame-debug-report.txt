@@ -1,0 +1,25 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.theartofdev.edmodo.cropper"
+4    android:versionCode="300001"
+5    android:versionName="2.06.00" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+8-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml
+10
+11    <application>
+11-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml:4:5-10:19
+12        <activity
+12-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml:6:9-9:59
+13            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+13-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml:7:13-76
+14            android:exported="false"
+14-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml:8:13-37
+15            android:theme="@style/Base.Theme.AppCompat" /> <!-- Googlw Analytic -->
+15-->D:\p\XFramework\cropper\src\main\AndroidManifest.xml:9:13-56
+16    </application>
+17
+18</manifest>

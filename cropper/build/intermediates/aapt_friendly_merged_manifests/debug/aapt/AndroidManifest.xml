@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.theartofdev.edmodo.cropper"
+    android:versionCode="300001"
+    android:versionName="2.06.00" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="29" />
+
+    <application>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:exported="false"
+            android:theme="@style/Base.Theme.AppCompat" /> <!-- Googlw Analytic -->
+    </application>
+
+</manifest>
