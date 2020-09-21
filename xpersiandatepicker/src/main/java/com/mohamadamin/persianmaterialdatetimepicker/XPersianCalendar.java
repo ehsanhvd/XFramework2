@@ -7,13 +7,23 @@ import java.util.Locale;
 
 public class XPersianCalendar extends PersianCalendar {
 
-    public XPersianCalendar(long millis) {
-        super();
-        setTimeInMillis(millis);
-    }
 
     public XPersianCalendar() {
         super();
+    }
+
+    public XPersianCalendar(int year, int month, int day) {
+        super();
+        setPersianDate(year, month, day);
+    }
+
+    public XPersianCalendar(int day, int month, int year, int hour, int min) {
+        super();
+        setPersianDate(year, month, day);
+        set(HOUR, hour);
+        set(MINUTE, min);
+        set(SECOND, 0);
+        set(MILLISECOND, 0);
     }
 
     public static XPersianCalendar getCalendar(String persianStringDate, String timeString) {

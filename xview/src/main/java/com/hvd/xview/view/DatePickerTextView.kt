@@ -5,17 +5,15 @@ import android.content.Context
 import android.content.ContextWrapper
 import android.util.AttributeSet
 import androidx.appcompat.app.AppCompatActivity
-import com.hvd.xcore.util.XPersianCalendar
-import com.hvd.xcustomview.date.XDatePicker
+import com.mohamadamin.persianmaterialdatetimepicker.XPersianCalendar
 import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog
+import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.XDatePicker
 import com.mohamadamin.persianmaterialdatetimepicker.utils.PersianCalendar
 
 
 class DatePickerTextView : BaseDatePickerTextView {
 
     constructor(context: Context) : super(context)
-
-    constructor(context: Context, format: Int) : super(context, format)
 
     constructor(context: Context, attrs : AttributeSet) : super(context,attrs)
 
@@ -37,7 +35,7 @@ class DatePickerTextView : BaseDatePickerTextView {
         setOnClickListener {
             XDatePicker(getActivity() as AppCompatActivity).showDatePicker { datePickerDialog: DatePickerDialog, day: Int, month: Int, year: Int ->
                 val calendar = XPersianCalendar(year, month, day)
-                setText(calendar.getFormatedPersianDate(format))
+                setText(calendar.persianShortFormat)
 
                 val persianCalendar = PersianCalendar()
                 persianCalendar.setPersianDate(year, month, day)

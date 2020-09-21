@@ -11,6 +11,7 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.hvd.xview.R
+import org.jetbrains.anko.custom.ankoView
 
 open class GlideImageView(context: Context, val attrs: AttributeSet?, val defStyleAttr: Int) :
     ImageView(context, attrs, defStyleAttr) {
@@ -67,6 +68,24 @@ open class GlideImageView(context: Context, val attrs: AttributeSet?, val defSty
         }
 
         request.into(this)
+    }
+
+    override fun setImageResource(resId: Int) {
+        setImageDrawableGlide(context.resources.getDrawable(resId))
+    }
+
+    fun setImageDrawableGlide(drawable: Drawable?) {
+        val request = Glide.with(getContext())
+            .load(drawable)
+
+        getOptions()?.let {
+            request.apply(it)
+        }
+
+        post {
+            request.into(this)
+        }
+
     }
 
     companion object {

@@ -3,6 +3,9 @@ package com.hvd.xcustomview.view.horizontalrecyclerview
 import android.content.Context
 import android.util.AttributeSet
 import android.view.ViewManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import org.jetbrains.anko.custom.ankoView
 
 class XHorizontalRecyclerView : RecyclerView {
     var attrs : AttributeSet? = null

@@ -6,6 +6,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.hvd.xcustomview.view.GlideImageView;
 import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DatePickerListener;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DateTimePickerListener;
@@ -46,5 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 });
             }
         });
+
+        ((GlideImageView)findViewById(R.id.circleImageView)).setImageResource(R.mipmap.ic_launcher);
     }
 }

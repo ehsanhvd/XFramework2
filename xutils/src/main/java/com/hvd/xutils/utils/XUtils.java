@@ -1,6 +1,5 @@
 package com.hvd.xutils.utils;
 
-import android.app.Activity;
 import android.app.Application;
 import android.content.ActivityNotFoundException;
 import android.content.ClipData;
@@ -9,7 +8,7 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.content.res.Resources;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Build;
 import android.util.TypedValue;
@@ -183,4 +182,7 @@ public class XUtils {
         }
     }
 
+    public static Typeface getTypeface(Context context, String path) {
+        return Typeface.createFromAsset(context.getAssets(), path);
+    }
 }

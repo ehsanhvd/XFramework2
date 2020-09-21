@@ -4,6 +4,7 @@ import android.content.Context
 import android.util.AttributeSet
 import android.widget.TextView
 import com.hvd.xview.R
+import com.hvd.xview.utils.XCustomViews
 
 class CustomTextView : TextView {
 
@@ -26,7 +27,9 @@ class CustomTextView : TextView {
         val ta = getContext().obtainStyledAttributes(attrs, R.styleable.CustomTextView, defStyleAttr, 0)
         val fontI = ta.getInt(R.styleable.CustomTextView_fontIndex, 0)
 
-        setTypeface(com.hvd.xcore.XConfig.typefaces[fontI])
+        if (XCustomViews.getTypefaces() != null && XCustomViews.getTypefaces().size > 0) {
+            typeface = XCustomViews.getTypefaces()[fontI]
+        }
         ta.recycle()
     }
 }
