@@ -32,7 +32,7 @@ abstract class XDrawerActivity : AppCompatActivity() {
 
     }
 
-    fun getDrawerLayout() : DrawerLayout {
+    fun getDrawerLayout(): DrawerLayout {
         return drawerView
     }
 
@@ -50,7 +50,7 @@ abstract class XDrawerActivity : AppCompatActivity() {
         onContentViewSet()
     }
 
-    open fun onContentViewSet(){
+    open fun onContentViewSet() {
 
     }
 
@@ -58,16 +58,16 @@ abstract class XDrawerActivity : AppCompatActivity() {
         return layoutInflater.inflate(R.layout.activity_drawer, null);
     }
 
-    fun setDrawerView(view: View){
+    fun setDrawerView(view: View) {
         frameDrawer.addView(view)
     }
 
-    fun setDrawerView(view: AnkoComponent<ViewGroup>){
+    fun setDrawerView(view: AnkoComponent<ViewGroup>) {
 //        frameDrawer.addView(view.createView(AnkoContext.create(getActivity(), frameDrawer)))
         frameDrawer.addView(getActivity(), view)
     }
 
-    fun setDrawerView(layoutResID: Int){
+    fun setDrawerView(layoutResID: Int) {
         setDrawerView(layoutInflater.inflate(layoutResID, frameDrawer, false))
     }
 
@@ -83,7 +83,7 @@ abstract class XDrawerActivity : AppCompatActivity() {
         Handler().postDelayed({ toggleDrawer() }, 500)
     }
 
-    protected fun setFragments(fragments: List<Fragment>){
+    protected fun setFragments(fragments: List<Fragment>) {
         this.fragmentItems = fragments
     }
 
@@ -103,18 +103,23 @@ abstract class XDrawerActivity : AppCompatActivity() {
             .commit()
         fragmentManager.executePendingTransactions()
 
-        if (fragmentItems[position] is XFragment){
+        if (fragmentItems[position] is XFragment) {
             (fragmentItems[position] as XFragment).onSelected()
         }
         currentIndex = position
+        onFragmentChanged(position, fragmentItems[position])
+    }
+
+    protected open fun onFragmentChanged(position: Int, fragment: Fragment) {
+
     }
 
     override fun onBackPressed() {
         if (supportFragmentManager.backStackEntryCount > 1) {
             supportFragmentManager.popBackStackImmediate()
         } else {
-            if (fragmentItems[currentIndex] is XFragment){
-                if (!(fragmentItems[currentIndex] as XFragment).onBackPressed()){
+            if (fragmentItems[currentIndex] is XFragment) {
+                if (!(fragmentItems[currentIndex] as XFragment).onBackPressed()) {
                     supportFinishAfterTransition()
                 }
             } else {
