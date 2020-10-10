@@ -1,4 +1,4 @@
-package com.hvd.xview.utils
+package com.theartofdev.edmodo
 
 import android.app.Activity
 import android.content.Context

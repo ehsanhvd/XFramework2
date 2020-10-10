@@ -11,7 +11,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.hvd.xcustomview.view.GlideImageView;
-import com.hvd.xview.utils.XImagePicker;
 import com.hvd.xview.utils.XPopupMenu;
 import com.mohamadamin.persianmaterialdatetimepicker.date.DatePickerDialog;
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.DatePickerListener;
@@ -23,7 +22,7 @@ import org.jetbrains.annotations.NotNull;
 
 public class MainActivity extends AppCompatActivity {
 
-    private XImagePicker picker;
+//    private XImagePicker picker;
 
 
     @Override
@@ -39,24 +38,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ((GlideImageView) findViewById(R.id.circleImageView)).setImageResource(R.mipmap.ic_launcher);
-        ((GlideImageView) findViewById(R.id.circleImageView)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                picker = new XImagePicker(MainActivity.this);
-                picker.startWithActivity(new XImagePicker.ImagePickerListener() {
-                    @Override
-                    public void onImagePicked(@NotNull Uri uri) {
-                        ((GlideImageView) findViewById(R.id.circleImageView)).setImageURI(uri);
-                    }
-                });
-            }
-        });
+//        ((GlideImageView) findViewById(R.id.circleImageView)).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                picker = new XImagePicker(MainActivity.this);
+//                picker.startWithActivity(new XImagePicker.ImagePickerListener() {
+//                    @Override
+//                    public void onImagePicked(@NotNull Uri uri) {
+//                        ((GlideImageView) findViewById(R.id.circleImageView)).setImageURI(uri);
+//                    }
+//                });
+//            }
+//        });
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        picker.onActivityResult(requestCode, resultCode, data);
+//        picker.onActivityResult(requestCode, resultCode, data);
     }
 
     private void showMenu() {
