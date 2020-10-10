@@ -2,7 +2,8 @@ apply plugin: 'com.android.library'
 // https://docs.gradle.org/current/userguide/publishing_maven.html
 // http://www.flexlabs.org/2013/06/using-local-aar-android-library-packages-in-gradle-builds
 apply plugin: 'maven-publish'
-
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.ehsanhvd'
 android {
 
     compileSdkVersion 29
