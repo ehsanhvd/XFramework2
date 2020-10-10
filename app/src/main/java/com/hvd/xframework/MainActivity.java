@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private XImagePicker picker;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
