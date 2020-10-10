@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                        android:id="@+id/drawerView"
+                                        android:layout_width="match_parent"
+                                        android:fitsSystemWindows="false"
+                                        android:layout_height="match_parent">
+
+    <FrameLayout
+            android:fitsSystemWindows="true"
+            android:background="?attr/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <FrameLayout
+                android:background="?android:colorBackground"
+                android:id="@+id/frameContent"
+                android:fitsSystemWindows="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <FrameLayout
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_gravity="start"
+            android:id="@+id/frameDrawer"
+            android:background="@android:color/white"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"/>
+</androidx.drawerlayout.widget.DrawerLayout>
