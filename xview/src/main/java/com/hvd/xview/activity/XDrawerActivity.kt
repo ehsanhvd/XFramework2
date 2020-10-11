@@ -13,9 +13,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.hvd.xcustomview.fragment.XFragment
 import com.hvd.xview.R
-import com.hvd.xview.extention.addView
 import kotlinx.android.synthetic.main.activity_drawer.*
-import org.jetbrains.anko.AnkoComponent
 
 abstract class XDrawerActivity : AppCompatActivity() {
 
@@ -60,11 +58,6 @@ abstract class XDrawerActivity : AppCompatActivity() {
 
     fun setDrawerView(view: View) {
         frameDrawer.addView(view)
-    }
-
-    fun setDrawerView(view: AnkoComponent<ViewGroup>) {
-//        frameDrawer.addView(view.createView(AnkoContext.create(getActivity(), frameDrawer)))
-        frameDrawer.addView(getActivity(), view)
     }
 
     fun setDrawerView(layoutResID: Int) {
