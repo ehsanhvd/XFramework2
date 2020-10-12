@@ -5,9 +5,8 @@
     android:orientation="horizontal">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1"
         android:orientation="vertical">
 
         <com.hvd.xcustomview.view.CustomButton
@@ -25,6 +24,12 @@
             android:id="@+id/circleImageView"
             android:layout_width="100dp"
             android:layout_height="100dp" />
+
+        <LinearLayout
+            android:id="@+id/linFormParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"></LinearLayout>
     </LinearLayout>
 
     <LinearLayout

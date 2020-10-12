@@ -6,6 +6,7 @@ import android.text.Html
 import android.util.TypedValue
 import android.view.View
 import android.widget.TextView
+import androidx.annotation.ColorInt
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 import androidx.core.content.ContextCompat
@@ -17,9 +18,11 @@ public class SnackBar {
 
     companion object {
 
-        fun show(activity: Activity, message: String?, @ColorRes colorRes: Int): Snackbar? {
-//        String colorCodeString = "#" + Integer.toHexString(ContextCompat.getColor(activity, R.color.darkerPersianGreen) & 0x00ffffff);
-            val html = "<font color=\"" + "#000000" + "\">%s</font>"
+        fun show(activity: Activity, message: String?, @ColorInt textColor: Int, @ColorRes bgColorRes: Int): Snackbar? {
+
+            val colorString = String.format("#%06X", 0xFFFFFF and textColor )
+
+            val html = "<font color=\"$colorString\">%s</font>"
             val snackbar = Snackbar.make(
                 activity.findViewById(android.R.id.content),
                 Html.fromHtml(String.format(html, message)),
@@ -27,7 +30,7 @@ public class SnackBar {
             )
             val tv = snackbar.view.findViewById<View>(R.id.snackbar_text) as TextView
             ViewCompat.setLayoutDirection(snackbar.view, ViewCompat.LAYOUT_DIRECTION_RTL)
-            snackbar.view.setBackgroundColor(ContextCompat.getColor(activity, colorRes))
+            snackbar.view.setBackgroundColor(ContextCompat.getColor(activity, bgColorRes))
             tv.setTypeface(XCustomViews.getTypefaces().get(0))
             tv.setTextSize(0, dpToPx(activity.application, 15).toFloat())
             tv.maxLines = 1
@@ -44,8 +47,8 @@ public class SnackBar {
             return px.toInt()
         }
 
-        fun show(activity: Activity, @StringRes res: Int, @ColorRes colorRes: Int): Snackbar? {
-            return show(activity, activity.getString(res), colorRes)
+        fun show(activity: Activity, @StringRes res: Int, @ColorInt textColor: Int, @ColorRes bgColorRes: Int): Snackbar? {
+            return show(activity, activity.getString(res), textColor, bgColorRes)
         }
     }
 

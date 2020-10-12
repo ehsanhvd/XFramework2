@@ -2,9 +2,8 @@ package com.hvd.xutils.utils
 
 import android.app.Application
 import android.content.Context
-import android.content.SharedPreferences
 
-class XPrefs(val app: Application) {
+class XPrefs(app: Application) {
 
     private var prefs = app.getSharedPreferences("xframework_prefs", Context.MODE_PRIVATE)
 

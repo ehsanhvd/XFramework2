@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="frameFragment" type="id" />
+    <item name="checkTest" type="id" />
+    <item name="textLabel" type="id" />
+    <item name="textDependant" type="id" />
+    <item name="editAnother" type="id" />
+    <item name="radioOption" type="id" />
+    <item name="checkWrapDep" type="id" />
+</resources>

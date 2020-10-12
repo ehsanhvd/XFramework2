@@ -12,6 +12,11 @@ public class XPersianCalendar extends PersianCalendar {
         super();
     }
 
+    public XPersianCalendar(Long date) {
+        super();
+        setTimeInMillis(date);
+    }
+
     public XPersianCalendar(int year, int month, int day) {
         super();
         setPersianDate(year, month, day);

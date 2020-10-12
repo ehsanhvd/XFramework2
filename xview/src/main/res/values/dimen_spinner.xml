@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomSpinner">
+        <attr name="defaultItem" format="reference" />
+        <attr name="dropdownItem" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="CustomSpinnerString">
+        <attr name="android:entries" />
+        <attr name="android:text" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="testArray">
+        <item>spinner item 1</item>
+        <item>spinner item 2</item>
+        <item>spinner item 3</item>
+    </array>
+
+    <array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </array>
+
+    <array name="inviteType">
+        <item>Friend</item>
+        <item>Ads</item>
+        <item>Facebook</item>
+        <item>Instagram</item>
+    </array>
+</resources>

@@ -1,10 +1,9 @@
 package com.hvd.xframework;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.PopupMenu;
 
 import androidx.annotation.Nullable;
@@ -38,24 +37,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
         ((GlideImageView) findViewById(R.id.circleImageView)).setImageResource(R.mipmap.ic_launcher);
-//        ((GlideImageView) findViewById(R.id.circleImageView)).setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                picker = new XImagePicker(MainActivity.this);
-//                picker.startWithActivity(new XImagePicker.ImagePickerListener() {
-//                    @Override
-//                    public void onImagePicked(@NotNull Uri uri) {
-//                        ((GlideImageView) findViewById(R.id.circleImageView)).setImageURI(uri);
-//                    }
-//                });
-//            }
-//        });
-    }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-//        picker.onActivityResult(requestCode, resultCode, data);
+//        FormGeneratorHelper.INSTANCE.generateManual(this, (LinearLayout) findViewById(R.id.linFormParent));
+        FormGeneratorHelper.INSTANCE.generateAuto(this, (LinearLayout) findViewById(R.id.linFormParent));
     }
 
     private void showMenu() {
