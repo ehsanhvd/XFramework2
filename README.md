@@ -1,4 +1,6 @@
-# XFramework2
-Commonly used Android codes and utils, packaged in a library
+### XUIFramework
 
-Any debug, develop and improvements are welcomed
+A framework for making android boilerplate easy, our goal is to write less common codes in every project. 
+
+#### Contribution
+Any pull requests, code improvement recommendations and bug reports are welcome.
