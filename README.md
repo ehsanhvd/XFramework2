@@ -3,7 +3,7 @@
 A framework for making android boilerplate easy, our goal is to write less common codes in every project. 
 
 #### Getting started
-```css
+
 //image picker and cropper util
 implementation 'com.github.ehsanhvd.XFramework2:cropper:{version}' 
 
