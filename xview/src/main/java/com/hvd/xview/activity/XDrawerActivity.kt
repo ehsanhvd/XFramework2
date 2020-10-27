@@ -15,6 +15,7 @@ import com.hvd.xcustomview.fragment.XFragment
 import com.hvd.xview.R
 import kotlinx.android.synthetic.main.activity_drawer.*
 
+@Deprecated("use view model way instead")
 abstract class XDrawerActivity : AppCompatActivity() {
 
     //fragmentActivity or drawerActivity???

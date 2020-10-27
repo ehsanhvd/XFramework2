@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.hvd.xcustomview.view.*
 import com.hvd.xforms.extentions.NN
-import com.hvd.xforms.extentions.ifNT
 import com.hvd.xview.view.CustomSpinner
 import com.mohamadamin.persianmaterialdatetimepicker.XPersianCalendar
 import com.tpa.formbuilder.validator.DateRangeValidator
@@ -61,7 +60,7 @@ open class Form private constructor(
         id: Int = View.NO_ID
     ): Form {
         return editText(
-            hint, text, 11, InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS, imeOpt,
+            hint, text, 40, InputType.TYPE_TEXT_VARIATION_EMAIL_ADDRESS, imeOpt,
             EmailValidator(mandatory),
             id
         )
@@ -454,7 +453,7 @@ open class Form private constructor(
             NN(checkResult) {
                 it(ve.editText, isValid)
             }
-            isValid.ifNT {
+            if (!isValid){
                 anyError = true
             }
         }

@@ -7,9 +7,3 @@ fun <T> NN(any: T?, op: ((it: T) -> Any)) {
     }
 }
 
-
-fun Boolean.ifNT(op: () -> Unit) {
-    if (this) {
-        op()
-    }
-}
