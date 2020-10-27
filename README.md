@@ -4,20 +4,22 @@ A framework for making android boilerplate easy, our goal is to write less commo
 
 #### Getting started
 
+	def latestVersion = '{put_latest_version_here}'
+	
     //image picker and cropper util
-    implementation 'com.github.ehsanhvd.XFramework2:cropper:{version}' 
+    implementation "com.github.ehsanhvd.XFramework2:cropper:$latestVersion" 
     
     //runtime form generator and validator
-    implementation 'com.github.ehsanhvd.XFramework2:xforms:{version}'
+    implementation "com.github.ehsanhvd.XFramework2:xforms:$latestVersion"
     
     //persian date picker and utils
-    implementation 'com.github.ehsanhvd.XFramework2:xpersiandatepicker:{version}'
+    implementation "com.github.ehsanhvd.XFramework2:xpersiandatepicker:$latestVersion"
     
     //common utils
-    implementation 'com.github.ehsanhvd.XFramework2:xutils:{version}'
+    implementation "com.github.ehsanhvd.XFramework2:xutils:$latestVersion"
     
     //custom views
-    implementation 'com.github.ehsanhvd.XFramework2:xview:{version}'
+    implementation "com.github.ehsanhvd.XFramework2:xview:$latestVersion"
 
 #### Contribution
 Any pull requests, code improvement recommendations and bug reports are welcome.
