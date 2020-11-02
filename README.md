@@ -1,9 +1,17 @@
+
 ### XUIFramework
 
 A framework for making android boilerplate easy, our goal is to write less common codes in every project. 
 
 #### Getting started
-
+#### project grade:
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+#### app module grade:
 	def latestVersion = '{put_latest_version_here}'
 	
     //image picker and cropper util
