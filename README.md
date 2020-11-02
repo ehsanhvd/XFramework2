@@ -3,7 +3,7 @@
 
 A framework for making android boilerplate easy, our goal is to write less common codes in every project. 
 
-#### Getting started
+### Getting started
 #### project grade:
 	allprojects {
 		repositories {
@@ -29,5 +29,5 @@ A framework for making android boilerplate easy, our goal is to write less commo
     //custom views
     implementation "com.github.ehsanhvd.XFramework2:xview:$latestVersion"
 
-#### Contribution
+### Contribution
 Any pull requests, code improvement recommendations and bug reports are welcome.
