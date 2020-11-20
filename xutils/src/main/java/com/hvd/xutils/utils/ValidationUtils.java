@@ -74,4 +74,11 @@ public class ValidationUtils {
         return matcher.matches();
     }
 
+    public static boolean isValidUrl(String url) {
+        Pattern URLMATCHER =
+                Pattern.compile("^https?://(www\\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\\.[a-zA-Z0-9()]{1,6}\\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)$");
+        Matcher matcher = URLMATCHER.matcher(url);
+        return matcher.matches();
+    }
+
 }

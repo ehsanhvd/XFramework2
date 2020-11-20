@@ -10,9 +10,8 @@ import android.widget.*
 import androidx.annotation.ArrayRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
-import com.hvd.xcustomview.view.*
 import com.hvd.xforms.extentions.NN
-import com.hvd.xview.view.CustomSpinner
+import com.hvd.xview.view.*
 import com.mohamadamin.persianmaterialdatetimepicker.XPersianCalendar
 import com.tpa.formbuilder.validator.DateRangeValidator
 import com.tpa.formbuilder.validator.EmailValidator

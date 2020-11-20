@@ -1,4 +1,4 @@
-package com.hvd.xcustomview.view
+package com.hvd.xview.view
 
 import android.content.Context
 import android.graphics.Bitmap
@@ -7,14 +7,14 @@ import android.net.Uri
 import android.util.AttributeSet
 import android.view.View
 import android.view.ViewManager
-import android.widget.ImageView
+import androidx.appcompat.widget.AppCompatImageView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.hvd.xview.R
 import org.jetbrains.anko.custom.ankoView
 
 open class GlideImageView(context: Context, val attrs: AttributeSet?, val defStyleAttr: Int) :
-    ImageView(context, attrs, defStyleAttr) {
+    AppCompatImageView(context, attrs, defStyleAttr) {
 
     var urlToLoad: String = ""
     var defDrawable: Drawable? = null

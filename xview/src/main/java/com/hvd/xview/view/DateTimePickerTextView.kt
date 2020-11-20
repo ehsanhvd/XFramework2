@@ -1,4 +1,4 @@
-package com.hvd.xcustomview.view
+package com.hvd.xview.view
 
 import android.app.Activity
 import android.content.Context
