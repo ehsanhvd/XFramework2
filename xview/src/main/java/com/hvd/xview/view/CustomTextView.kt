@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import com.hvd.xview.R
 import com.hvd.xview.utils.XCustomViews
 
-class CustomTextView : AppCompatTextView {
+open class CustomTextView : AppCompatTextView {
 
     constructor(context: Context) : super(context){
         init(context, null, 0)

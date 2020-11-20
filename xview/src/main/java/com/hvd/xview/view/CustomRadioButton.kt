@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatRadioButton
 import com.hvd.xview.R
 import com.hvd.xview.utils.XCustomViews
 
-class CustomRadioButton : AppCompatRadioButton {
+open class CustomRadioButton : AppCompatRadioButton {
 
     constructor(context: Context) : super(context){
         init(context, null, 0)

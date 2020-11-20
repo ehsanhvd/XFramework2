@@ -6,7 +6,7 @@ import android.view.ViewManager
 import com.bumptech.glide.request.RequestOptions
 import org.jetbrains.anko.custom.ankoView
 
-class GlideImageViewCircle(context: Context, attrs: AttributeSet?, defStyleAttr: Int): GlideImageView(context, attrs, defStyleAttr) {
+open class GlideImageViewCircle(context: Context, attrs: AttributeSet?, defStyleAttr: Int): GlideImageView(context, attrs, defStyleAttr) {
 
 
     constructor(context: Context) : this(context, null, 0)

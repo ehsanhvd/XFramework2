@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatCheckBox
 import com.hvd.xview.R
 import com.hvd.xview.utils.XCustomViews
 
-class CustomCheckbox : AppCompatCheckBox {
+open class CustomCheckbox : AppCompatCheckBox {
 
     constructor(context: Context) : super(context){
         init(context, null, 0)

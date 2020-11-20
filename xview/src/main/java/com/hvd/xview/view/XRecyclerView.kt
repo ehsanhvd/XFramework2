@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.hvd.xview.R
 
 
-class XRecyclerView(context: Context, val attrs: AttributeSet?, val defStyleAttr: Int) :
+open class XRecyclerView(context: Context, val attrs: AttributeSet?, val defStyleAttr: Int) :
     RecyclerView(context, attrs, defStyleAttr) {
     constructor(context: Context) : this(context, null, 0)
 

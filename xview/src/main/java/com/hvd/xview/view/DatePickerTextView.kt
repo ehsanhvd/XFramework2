@@ -11,7 +11,7 @@ import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.XDatePicker
 import com.mohamadamin.persianmaterialdatetimepicker.utils.PersianCalendar
 
 
-class DatePickerTextView : BaseDatePickerTextView {
+open class DatePickerTextView : BaseDatePickerTextView {
 
     constructor(context: Context) : super(context)
 

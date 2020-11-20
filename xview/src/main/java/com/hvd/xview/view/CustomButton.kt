@@ -6,7 +6,7 @@ import androidx.appcompat.widget.AppCompatButton
 import com.hvd.xview.R
 import com.hvd.xview.utils.XCustomViews
 
-class CustomButton :  AppCompatButton {
+open class CustomButton :  AppCompatButton {
 
     constructor(context: Context) : super(context){
         init(context, null, 0)

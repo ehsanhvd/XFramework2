@@ -25,6 +25,11 @@
             android:layout_width="100dp"
             android:layout_height="100dp" />
 
+        <com.hvd.xview.view.justify.JustifiedTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="justified text" />
+
         <LinearLayout
             android:id="@+id/linFormParent"
             android:layout_width="match_parent"

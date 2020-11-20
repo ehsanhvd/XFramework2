@@ -9,7 +9,7 @@ import com.mohamadamin.persianmaterialdatetimepicker.XPersianCalendar
 import com.mohamadamin.persianmaterialdatetimepicker.datecontroller.XDateTimePicker
 import com.mohamadamin.persianmaterialdatetimepicker.time.TimePickerDialog
 
-class DateTimePickerTextView : BaseDatePickerTextView {
+open class DateTimePickerTextView : BaseDatePickerTextView {
     constructor(context: Context) : super(context)
 
     constructor(context: Context, attrs : AttributeSet) : super(context,attrs)
